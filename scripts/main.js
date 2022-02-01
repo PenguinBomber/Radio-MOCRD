@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 	getMetaData();
 
+	//load the audio and play it to get around the safari infiload bug
 	audioTag = document.querySelector("audio");
 	audioTag.load();
 	audioTag.play();
