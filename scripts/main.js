@@ -1,6 +1,10 @@
 //start the title track tile shower when the page is ready
 document.addEventListener("DOMContentLoaded", function(){
 	getMetaData();
+
+	audioTag = document.querySelector("audio");
+	audioTag.load();
+	audioTag.play();
 })
 
 //function for getting, parsing, and displaying the track info
