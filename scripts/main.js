@@ -1,13 +1,17 @@
 //start the title track tile shower when the page is ready
 document.addEventListener("DOMContentLoaded", function(){
 	getMetaData();
+	
+	//I HAVE NO CLUE HOW THIS FIXES THE SAFARI BUG BUT WHATEVER IT WORKS NOW
+	setTimeout(startPlayback,10);
+})
 
-	//load the audio and play it to get around the safari infiload bug
+//load the audio and play it to get around the safari infiload bug
+function startPlayback() {
 	audioTag = document.querySelector("audio");
 	audioTag.load();
 	audioTag.play();
-})
-
+}
 //function for getting, parsing, and displaying the track info
 function getMetaData() {
 	//fetch the server info
