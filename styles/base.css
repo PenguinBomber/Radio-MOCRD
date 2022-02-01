@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&family=Ubuntu+Mono&display=swap');
+body {
+    font-family: 'Ubuntu Mono', cursive;
+    text-align: center;
+    background-image: url("../bg.png");
+    background-repeat: repeat;
+
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    border-top: darkgray 0.1rem solid;
+    border-left: darkgray 0.1rem solid;
+    border-bottom: gray 0.1rem solid;
+    border-right: gray 0.1rem solid;
+
+    margin: 0rem 0.2rem 0 0;
+}
+
+.window {
+    margin: 1rem;
+    justify-self: center;
+    align-self: center;
+
+    background-color: white;
+    border: 0.1rem gray solid;
+    color: black;
+    box-shadow: 0.5rem 0.5rem 0rem black;
+}
+
+.window > .titleBar {
+    width: 100%-0.4rem;
+    text-align: left;
+    
+    background-color: darkcyan;
+    border-bottom: 0.1rem gray solid;
+    color: white;
+
+    padding: 0.2rem;
+}
+
+.window > .content {
+    padding: 0.2rem;
+}
+
+.status {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: lightgray;
+    border-bottom: 0.1rem gray solid;
+    color: black;
+    
+    padding: 0.2rem;
+}
+

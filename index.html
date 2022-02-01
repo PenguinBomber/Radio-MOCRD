@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/base.css">
+		<link rel="stylesheet" href="styles/layout.css">
+
+		<title>MOCRD Radio</title>
+
+		<script src="scripts/main.js"></script>
+	</head>
+	<body>
+		<div class="status">
+			<a href="mailto:web@mocrd.org" class="button">Contact</a>
+			- WARNING >> Thie Site is in constant change and chaos << WARNING
+		</div>
+		<div id="grid">
+			<div class="window" id="title">
+				<div class="titleBar">WebPage Title</div>
+				<div class="content">
+					<h1>MOCRD - RADIO</h1>
+				</div>
+			</div>
+			<div class="window" id="nowPlaying">
+				<marquee class="titleBar" id="trackTitle">NOW PLAYING</marquee>
+				<div class="content">
+					<image alt="Album Art">
+					<div id="playerControls"></div>
+					<audio
+						autoplay
+						controls
+						type="audio/mpeg">
+						<source src="https://radio.ngrok.io/live">
+						<!--display for unsupported browsers-->
+						Your Browser is kinda wack. <a href="https://radio.ngrok.io/live.m3u">Download</a> the audio stream instead.
+					</audio>
+				</div>
+			</div>
+			<div class="window" id="queue">
+				<div class="titleBar">Queue</div>
+				<div class="content">
+					This is where the Queue would go... IF WE HAD ONE
+				</div>
+			</div>
+			<div class="window" id="credits">
+				<div class="titleBar">Credits</div>
+				<div class="content">
+					Back End / Audio Streaming : Solomon Thatcher
+					<br>Front End / Web design : Bryce Schuman
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
