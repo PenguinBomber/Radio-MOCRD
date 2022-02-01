@@ -16,6 +16,8 @@ function getMetaData() {
 		res.json().then( json => {
 			//display the track title
 			document.querySelector("#trackTitle").innerHTML = "NOW PLAYING: " + json.icestats.source.title;
+			//add the title to the audio player
+			document.querySelector("audio").title = "MOCRD RADIO - " + json.icestats.source.title;
 		})
 	})
 	setTimeout(getMetaData,5000);
