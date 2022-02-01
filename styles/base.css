@@ -11,6 +11,7 @@ body {
     padding: 0;
 }
 
+/*CSS for stylising components*/
 .button {
     border-top: darkgray 0.1rem solid;
     border-left: darkgray 0.1rem solid;

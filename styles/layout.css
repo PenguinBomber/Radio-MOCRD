@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&family=Ubuntu+Mono&display=swap');
+/*Layout CSS shared beween both modes*/
 body {
 	display: flex;
 	flex-direction: column;
@@ -7,6 +7,8 @@ body {
 #grid {
 	margin: 1rem;
 }
+
+/*CSS for the Desktop mode*/
 @media only screen and (min-width : 600px){
 	#grid {
 		display: grid;
@@ -39,7 +41,13 @@ body {
 
 		min-width: 15rem;
 	}
+	#info {
+		grid-row: 2/3;
+		grid-column: 1 / 4;
+	}
 }
+
+/*CSS for the Mobile mode*/
 @media only screen and (max-width : 600px){
 	#grid {
 		display: flexbox;
@@ -55,6 +63,9 @@ body {
 	}
 	#credits {
 		min-width: 10rem;
+	}
+	#info {
+		min-width: 15rem;
 	}
 	#title {
 		min-width: 15rem;
