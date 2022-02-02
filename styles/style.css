@@ -10,13 +10,9 @@ body {
     margin: 0;
     padding: 0;
 }
-#albumArt {
-    width: 13rem;
-    
-    margin: 1rem 1rem;
-    margin-top: 0.7rem;
-
-    border: 0.2rem black solid;
+.art {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
 }
 /*CSS for stylising components*/
 .button {

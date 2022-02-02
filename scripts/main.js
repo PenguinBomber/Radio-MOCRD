@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	getMetaData();
 	//I HAVE NO CLUE HOW THIS FIXES THE SAFARI BUG BUT WHATEVER IT WORKS NOW
 	//setTimeout(startPlayback,500);
+	// ??NO??
 })
 
 //load the audio and play it to get around the safari infiload bug
@@ -36,7 +37,7 @@ function getArtwork () {
 		res.text().then( text => {
 			console.log(text);
 			if (text == "no art") {
-				document.querySelector("#albumArt").src = "images/TempAlbumArt.jpg";
+				document.querySelector("#albumArt").src = "images/noArt.png";
 			} else {
 				document.querySelector("#albumArt").src = text;
 			}
