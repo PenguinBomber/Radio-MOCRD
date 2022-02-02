@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	getMetaData();
 	
 	//I HAVE NO CLUE HOW THIS FIXES THE SAFARI BUG BUT WHATEVER IT WORKS NOW
-	setTimeout(startPlayback,10);
+	setTimeout(startPlayback,500);
 })
 
 //load the audio and play it to get around the safari infiload bug
