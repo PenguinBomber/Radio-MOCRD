@@ -16,7 +16,7 @@
 	<body>
 		<!--Status Bar-->
 		<div class="status">
-			<a href="mailto:web@mocrd.org" class="button">Contact</a>
+			<a href="mailto:web@mocrd.org"><button>Contact</button></a>
 			- WARNING >> Thie Site is in constant change and chaos << WARNING
 		</div>
 		<div id="grid">
@@ -35,13 +35,16 @@
 					<image alt="Album Art Placeholder" id="albumArt" class="art" src="images/noArt.png">
 					<div id="playerControls"></div>
 					<audio
-						controls
 						preload="none"
 						type="audio/mpeg">
 						<source src="https://radio.ngrok.io/live">
 						<!--display for unsupported browsers-->
 						Your Browser is kinda wack. <a href="https://radio.ngrok.io/live.m3u">Download</a> the audio stream instead.
 					</audio>
+					<div class="controls">
+						<button id="playPause">Play</button>
+						<input id="volume" type="range" value="100">
+					</div>
 				</div>
 			</div>
 

@@ -10,20 +10,98 @@ body {
     margin: 0;
     padding: 0;
 }
+/*remove browser button styles*/
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+/*CSS for stylising components*/
 .art {
     width: calc(100% - 1rem);
     margin: 0.5rem;
 }
-/*CSS for stylising components*/
-.button {
-    border-top: darkgray 0.1rem solid;
-    border-left: darkgray 0.1rem solid;
-    border-bottom: gray 0.1rem solid;
-    border-right: gray 0.1rem solid;
-
-    margin: 0rem 0.2rem 0 0;
+.controls {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    
+    display: flex;
+    justify-items: center;
+    align-items: stretch;
+}
+input[type="range"] {
+    -webkit-appearance: none;
 }
 
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: gray;
+    height: 0.2rem;
+}
+
+input[type="range"]::-moz-range-track {
+    background: gray;
+    height: 0.2rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-top: darkgray 0.2rem solid;
+    border-left: darkgray 0.2rem solid;
+    border-bottom: gray 0.2rem solid;
+    border-right: gray 0.2rem solid;
+
+    margin: 0rem 0.2rem 0 0;
+
+    background-color: lightgray;
+
+    height: 1.5rem;
+    width: 0.8rem;
+    margin-top: -0.65rem;
+}
+   
+input[type="range"]::-moz-range-thumb {
+    border-top: darkgray 0.2rem solid;
+    border-left: darkgray 0.2rem solid;
+    border-bottom: gray 0.2rem solid;
+    border-right: gray 0.2rem solid;
+
+    margin: 0rem 0.2rem 0 0;
+
+    background-color: lightgray;
+
+    height: 1rem;
+    width: 0.5rem;
+    margin-top: -0.65rem;
+}
+
+button {
+    border-top: darkgray 0.2rem solid;
+    border-left: darkgray 0.2rem solid;
+    border-bottom: gray 0.2rem solid;
+    border-right: gray 0.2rem solid;
+
+    margin: 0rem 0.2rem 0 0;
+
+    background-color: lightgray;
+}
+
+button:active {
+    border-top: gray 0.2rem solid;
+    border-left: gray 0.2rem solid;
+    border-bottom: darkgray 0.2rem solid;
+    border-right: darkgray 0.2rem solid;
+}
+#playPause {
+    width: 5rem;
+}
 .window {
     margin: 1rem;
     justify-self: center;
