@@ -10,7 +10,14 @@ body {
     margin: 0;
     padding: 0;
 }
+#albumArt {
+    width: 13rem;
+    
+    margin: 1rem 1rem;
+    margin-top: 0.7rem;
 
+    border: 0.2rem black solid;
+}
 /*CSS for stylising components*/
 .button {
     border-top: darkgray 0.1rem solid;
@@ -44,7 +51,7 @@ body {
 }
 
 .window > .content {
-    padding: 0.2rem;
+    padding: 0.3rem;
 }
 
 .status {
