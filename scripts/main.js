@@ -1,9 +1,9 @@
 //start the title track tile shower when the page is ready
 document.addEventListener("DOMContentLoaded", function(){
 	getMetaData();
-	
+	getArtwork();
 	//I HAVE NO CLUE HOW THIS FIXES THE SAFARI BUG BUT WHATEVER IT WORKS NOW
-	setTimeout(startPlayback,500);
+	//setTimeout(startPlayback,500);
 })
 
 //load the audio and play it to get around the safari infiload bug
@@ -12,6 +12,7 @@ function startPlayback() {
 	audioTag.load();
 	audioTag.play();
 }
+
 //function for getting, parsing, and displaying the track info
 function getMetaData() {
 	//fetch the server info
@@ -27,6 +28,8 @@ function getMetaData() {
 	setTimeout(getMetaData,5000);
 };
 function getArtwork () {
-	
+	fetch("https://iceimagegen.ngrok.io/art").then( res => {
+		console.log(res);
+	});
 }
 
