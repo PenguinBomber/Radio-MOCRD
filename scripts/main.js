@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	//setup the play button
 	button.addEventListener("click", function(){
 		if (audioTag.paused) {
+			audioTag.load();
 			audioTag.play();
 		} else {
 			audioTag.pause();
